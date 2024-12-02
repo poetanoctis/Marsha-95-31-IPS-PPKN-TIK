@@ -1,0 +1,263 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #1D4348;
+    color: #857D5D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-bottom: 80px; /* Ensures footer doesn't overlap */
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    height: 150px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Navigation Bar Styles */
+nav {
+    width: 100%;
+    background-color: #444;
+    border-bottom: 2px solid #333;
+}
+
+.nav-bar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.nav-bar li {
+    position: relative;
+}
+
+/* Navigation Links */
+.nav-bar a {
+    text-decoration: none;
+    color: #FFF;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-bar a:hover {
+    background-color: #1D4348;
+    transform: translateY(-5px);
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    display: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+    z-index: 100;
+}
+
+.dropdown-menu li {
+    border-bottom: 1px solid #444;
+}
+
+.dropdown-menu li a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Content Container */
+.content-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #BCC4C6;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+/* IPS Page Styles */
+.ips-img-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.ips-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.ips-img-hover {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.ips-img-container:hover .ips-img-hover {
+    opacity: 1;
+}
+
+.ips-body {
+    padding: 20px;
+    background-color: #fff;
+    color: #1D4348;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Heading Styles */
+h1, h2, h3 {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2, h3 {
+    font-size: 1.5em;
+}
+
+/* Unordered List Styles */
+ul {
+    list-style-type: disc;
+    margin-left: 40px;
+    padding-left: 20px;
+}
+
+.indented-list {
+    margin-left: 40px;
+    line-height: 1.8;
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+}
+
+/* Home Button in Footer */
+.home-button {
+    padding: 10px 20px;
+    background-color: #1D4348;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.home-button:hover {
+    background-color: #857D5D;
+}
+
+/* Section Highlights */
+.multilateral-section,
+.bilateral-section,
+.regional-section {
+    background-color: #F0E68C;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid #857D5D;
+}
+
+.highlight-kesimpulan,
+.highlight-saran {
+    background-color: #D1E7DD;
+    padding: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Improved Navigation Bar */
+.nav-bar a:hover {
+    background-color: #857D5D; /* Hover effect with a subtle contrast */
+    transform: translateY(-3px);
+}
+
+/* New Body Content Styling */
+.content-container {
+    max-width: 1200px;
+    width: 90%;
+    background-color: #FFF;
+    color: #1D4348;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+/* Multilateral Image Section */
+.multilateral-img-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.multilateral-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
